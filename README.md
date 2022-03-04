@@ -34,7 +34,7 @@
 - Upload directory to pinata  
 
 ### Step 2 [ TESTNET ]
-
+- Goerli faucet => https://goerli-faucet.mudit.blog/ 
 - get testnet ETH
 
 ### STEP 3 [ REMIX ]
