@@ -2,11 +2,42 @@
 
 ### ❤️  [ How to mint your first Sexy Founder NFT ]
 
-### Step 1 [ TESTNET ]
+### STEP 1 [ IPFS ]
+- Create a Piñata.cloud acount => https://www.pinata.cloud/
+- Upload image file 
+- How to setup metadata to be read by OpenSea => https://docs.opensea.io/docs/metadata-standards
+- Add new image url to metadata 
+
+```
+{
+  "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
+  "external_url": "https://openseacreatures.io/3", 
+  "image": "ipfs://< add random IPFS image CID here >", 
+  "name": "Dave Starbelly",
+  "attributes": [
+	    {
+	      "trait_type": "Name", 
+	      "value": "Wolf"
+	    }, 
+	    {
+	      "trait_type": "Eye Color", 
+	      "value": "Green"
+	    }, 
+	    {
+	      "trait_type": "Favorite NFT", 
+	      "value": "CatBlox"
+	    }
+  ], 
+}
+```
+- Create a file with the token ID as the name and add to a new directory named "metadata" or anything you want 
+- Upload directory to pinata  
+
+### Step 2 [ TESTNET ]
 
 - get testnet ETH
 
-### STEP 2 [ REMIX ]
+### STEP 3 [ REMIX ]
 
 - go to remix
 - compile code in remix
@@ -47,33 +78,3 @@ contract BasicNFT is ERC721, Ownable {
 
 }
 ```
-
-### STEP 3 [ IPFS ]
-
-- Upload image
-- How to setup metadata to be read by OpenSea => https://docs.opensea.io/docs/metadata-standards
-
-```
-{
-  "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
-  "external_url": "https://openseacreatures.io/3", 
-  "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
-  "name": "Dave Starbelly",
-  "attributes": [
-	    {
-	      "trait_type": "Name", 
-	      "value": "Wolf"
-	    }, 
-	    {
-	      "trait_type": "Eye Color", 
-	      "value": "Green"
-	    }, 
-	    {
-	      "trait_type": "Favorite NFT", 
-	      "value": "CatBlox"
-	    }
-  ], 
-}
-```
-
-- Upload metadata
