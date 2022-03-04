@@ -23,12 +23,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /** BasicNFT */
 contract BasicNFT is ERC721, Ownable {
 
-		string public baseURI;
+	string public baseURI;
 
-    constructor(
-        string memory _name,
-        string memory _symbol,
-    ) ERC721(_name, _symbol) {}
+    	constructor(
+        	string memory _name,
+        	string memory _symbol,
+    	) ERC721(_name, _symbol) {}
 
 	/* MINT */
     	function mint(address _to, _tokenId) public onlyOwner {
