@@ -1,6 +1,6 @@
 # Dev Class
 
-### ❤️  [ How to mint your first Sexy Founder NFT ]
+### ❤️  [ How to mint your first Founder NFT ]
 
 ### STEP 1 [ IPFS ]
 - Create a Piñata.cloud acount => https://www.pinata.cloud/
