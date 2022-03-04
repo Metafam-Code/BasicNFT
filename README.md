@@ -40,7 +40,7 @@
 ### STEP 3 [ REMIX ]
 
 - go to remix
-- compile code in remix
+- compile code in remix => https://remix.ethereum.org/
 - deploy code
 
 ```jsx
