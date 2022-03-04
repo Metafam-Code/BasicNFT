@@ -30,20 +30,20 @@ contract BasicNFT is ERC721, Ownable {
         string memory _symbol,
     ) ERC721(_name, _symbol) {}
 
-		/* MINT */
-    function mint(address _to, _tokenId) public onlyOwner {
-        _safeMint(_to, _tokenId);
-    }
+	/* MINT */
+    	function mint(address _to, _tokenId) public onlyOwner {
+        	_safeMint(_to, _tokenId);
+    	}
 
-		/* GET URI FOR EACH TOKEN */
-    function tokenURI(uint256 _tokenId) override public pure returns (string memory) {
-        return string(abi.encodePacked(baseURI(), Strings.toString(_tokenId)));
-    }
+	/* GET URI FOR EACH TOKEN */
+    	function tokenURI(uint256 _tokenId) override public pure returns (string memory) {
+        	return string(abi.encodePacked(baseURI(), Strings.toString(_tokenId)));
+   	}
 
-		/* SET BASE URI */
-		function setBaseURI(string memory _baseURI) external onlyOwner {
-        baseURI = _baseURI;
-    }
+	/* SET BASE URI */
+	function setBaseURI(string memory _baseURI) external onlyOwner {
+        	baseURI = _baseURI;
+    	}
 
 }
 ```
