@@ -52,4 +52,29 @@ contract BasicNFT is ERC721, Ownable {
 
 - Upload image
 - How to setup metadata to be read by OpenSea
+CHECKOUT NFT METADATA STANDARD: https://docs.opensea.io/docs/metadata-standards
+
+```
+{
+  "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
+  "external_url": "https://openseacreatures.io/3", 
+  "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
+  "name": "Dave Starbelly",
+  "attributes": [
+	    {
+	      "trait_type": "Name", 
+	      "value": "Wolf"
+	    }, 
+	    {
+	      "trait_type": "Eye Color", 
+	      "value": "Green"
+	    }, 
+	    {
+	      "trait_type": "Favorite NFT", 
+	      "value": "CatBlox"
+	    }
+  ], 
+}
+```
+
 - Upload metadata
