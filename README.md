@@ -51,8 +51,7 @@ contract BasicNFT is ERC721, Ownable {
 ### STEP 3 [ IPFS ]
 
 - Upload image
-- How to setup metadata to be read by OpenSea
-CHECKOUT NFT METADATA STANDARD: https://docs.opensea.io/docs/metadata-standards
+- How to setup metadata to be read by OpenSea => https://docs.opensea.io/docs/metadata-standards
 
 ```
 {
